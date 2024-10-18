@@ -1,9 +1,6 @@
 import turtle as trtl
 import random
 
-screen = trtl.Screen()
-screen.bgcolor("#ADD8E6")
-
 painter = trtl.Turtle()
 painter.speed(0)
 
@@ -37,6 +34,10 @@ while True:
         break
     else:
         print("Invalid input. Please enter a valid integer.")
+
+screen = trtl.Screen()
+screen.setup(width = width, height = height)
+screen.bgcolor("#ADD8E6")
 
 for i in range(20):
     xcod = random.randint((-1 * width), width)
